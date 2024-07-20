@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-text{  
+        background: linear-gradient(270deg, #DA7C25 50%, #B923E1 100%);
+        -webkit-background-clip: text;
+        color: transparent; 
+      
+}
+.custom-text2{  
+        background: linear-gradient(270deg, #DF8908 80%, #B415FF 100%);
+        -webkit-background-clip: text;
+        color: transparent; 
+      
+}
+
+.resume::after {
+    content: "";
+    left: -1%;
+    bottom: -115%;
+    position: absolute;
+    width: 177px;
+    height: 48px;
+    background-color: #B923E1;
+    border-radius: 50%;
+   transition: ease-in 0.4s;
+   z-index: -1;
+}
+
+.resume:hover::after{
+    bottom: -5%;
+    border-radius: 0%;
+}
+
+
+@media(max-width:768px){
+
+    
+
+    .Navbar{
+        position: relative;
+       
+    }
+
+    .logo{
+        position: absolute;
+        left: 12%;
+    }
+    .NavMenu{
+       position: fixed;
+       top: 0%;
+      background-color: #1F0016;
+       width: 300px;
+       height: 100%;
+    }
+
+    .NavMenu div{
+        margin: 8.5vw;
+        font-size:larger;
+        display: flex;
+    }
+
+    .NavMenu img{
+        padding-left: 10px ;
+    }
+
+     .MenuIc{
+        position: absolute;
+        margin: 5px;
+        height: 50px;
+        width: 50px;
+        top: 20%;
+        right: 3%;
+    }
+
+    .Navbar button{
+        display: none;
+    }
+
+    .Hero h1{
+        font-size: 40px;
+    }
+    .Img-Div{
+        display: none;
+    }
+
+    .About{
+        padding: 30px;
+    }
+
+    .heading{
+        justify-items: left;
+    }
+
+    .heading h1{
+        font-size: 40px;
+    width: 200px;
+    }
+
+    .Text h1{
+        font-size: 28px;
+    }
+
+    .Text span{
+        font-size: 13px;
+    }
+
+    .Project-screen{
+        padding: 30px;
+    }
+
+    .Projects{
+        align-items: normal;
+    }
+
+    .Projects .Div1{
+        width: 200px;
+    }
+
+    .Projects h1{
+        font-size: 40px;
+    }
+
+    .Projects img{
+        width: 115px;
+    right: 10px;
+    bottom: 52px;
+    }
+
+    .Project-Cards{
+        padding: 0;
+        gap: 0;
+    }
+
+    .Card{
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+
+    .Card h1{
+        font-size: 18px;
+    }
+
+    .Card img{
+        width: 100%;
+        height: 120px;
+    }
+
+    .Footer .Div1{
+        width: 200px;
+    }
+   
+    .Footer h1{
+        font-size: 40px;
+    }
+
+    .Footer img{
+        width: 115px;
+        right: 19px;
+        bottom: 52px;
+    }
+    .Footer p{
+        width: 100%;
+    }
+
+    .Info-Div li{
+        margin: 0%;
+        width: 100%;
+    }
+    .reserve-text{
+        font-size: small;
+        padding: 0%;
+        padding-top: 3%;
+    }
+}
+
+@media (max-width:986px) {
+    .Project-Cards{
+        justify-content: center;
+    }
+    .Info-Div{
+        flex-wrap: wrap;
+        width: 80%;
+        height: fit-content;
+    }
+}
