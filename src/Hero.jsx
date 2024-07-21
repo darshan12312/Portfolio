@@ -22,7 +22,7 @@ const Hero = () => {
       </p>
 
       <div className="buttons">
-        <a href="https://docs.google.com/document/d/1ejysd1dio_C8jVumOzXZO3ze1eSHd00liKrVkeuMSJ8/edit?usp=drive_link">
+        <a href="https://drive.google.com/file/d/1-qgQJ5Yeh9gqdJX3buhWymbCc_Zdp-Sx/view?usp=drive_link">
         <button className=" resume   text-white font-large ease-in hover:border-[#B71DEC] duration-200 border-white border-2 h-12 w-44 rounded-3xl relative z-10 overflow-hidden ">
           <span className="hover:text-white" >My Resume</span>
         </button>
