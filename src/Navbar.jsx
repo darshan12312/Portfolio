@@ -46,7 +46,7 @@ const Navbar = () => {
 
         <div
           onClick={() => handleToggle("home")}
-          className="text-white font-medium px-4 cursor-pointer items-center   "
+          className="text-white hover:text-[#ca527e] font-medium px-4 cursor-pointer items-center   "
         >
           Home
           <img
@@ -57,22 +57,26 @@ const Navbar = () => {
 
         <div
           onClick={() => handleToggle("about")}
-          className="text-white font-medium px-4 cursor-pointer "
+          className="text-white font-medium px-4 cursor-pointer hover:text-[#ca527e] "
         >
           About Me
           <img
-            className={`${activeLink === "about" ? "" : "hidden"} Design`}
+            className={`${
+              activeLink === "about" ? "" : "hidden"
+            }  Design`}
             src={Design}
           />
         </div>
 
         <div
           onClick={() => handleToggle("Project")}
-          className="text-white font-medium px-4 cursor-pointer "
+          className="text-white font-medium px-4 cursor-pointer hover:text-[#ca527e] "
         >
           Projects
           <img
-            className={`${activeLink === "Project" ? "" : "hidden"} Design`}
+            className={`${
+              activeLink === "Project" ? "" : "hidden"
+            }  Design`}
             src={Design}
           />
         </div>
@@ -80,7 +84,7 @@ const Navbar = () => {
         <a href="https://www.linkedin.com/in/darshan-dugad/">
           <div
             onClick={() => handleToggle("portfolio")}
-            className="text-white font-medium px-4 cursor-pointer "
+            className="text-white font-medium px-4 cursor-pointer hover:text-[#ca527e] "
           >
             Linkedin
             <img
@@ -95,19 +99,25 @@ const Navbar = () => {
         <a href="https://github.com/darshan12312">
           <div
             onClick={() => handleToggle("github")}
-            className="text-white  font-medium px-4 cursor-pointer "
+            className="text-white  font-medium px-4 cursor-pointer hover:text-[#ca527e] "
           >
             Github
             <img
-              className={`${activeLink === "github" ? "" : "hidden"} Design`}
+              className={`${
+                activeLink === "github" ? "" : "hidden"
+              } Design `}
               src={Design}
             />
           </div>
         </a>
-
       </div>
 
-      <button onClick={()=>{ handleToggle("Contact") }} className=" hover:scale-105 ease-in duration-200  text-white font-medium bg-custom-gradient h-12 w-44 rounded-3xl md:flex justify-center items-center">
+      <button
+        onClick={() => {
+          handleToggle("Contact");
+        }}
+        className=" hover:scale-105 ease-in duration-200  text-white font-medium bg-custom-gradient h-12 w-44 rounded-3xl md:flex justify-center items-center"
+      >
         Connect With Me
       </button>
     </div>
